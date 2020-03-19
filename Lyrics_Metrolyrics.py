@@ -2,14 +2,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from PIL import Image
 import json
 import json_lines
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import TfidfVectorizer
-import spacy
+from sklearn.feature_extraction.text import
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report
 from collections import Counter
@@ -18,7 +18,6 @@ from imblearn.combine import SMOTETomek
 from imblearn.over_sampling import RandomOverSampler, SMOTE
 from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix, f1_score
 from wordcloud import WordCloud, STOPWORDS
-from PIL import Image
 
 # Insert lyrics location
 df = pd.read_json (',lines=True)
